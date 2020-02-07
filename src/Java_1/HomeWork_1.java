@@ -1,3 +1,5 @@
+package Java_1;
+
 public class HomeWork_1 {
     public static void main(String[] args) {
         // создать переменные всех типов
@@ -16,7 +18,6 @@ public class HomeWork_1 {
         hello("Билли Боб Торнтон");
         System.out.println(isLeapYear(2020));
     }
-    //Продолжаем тренироваться с ГИТ. Эксперимент №5 Создал новую ветку NewBranchHomeWork_1
 
     //Написать метод вычисляющий выражение a * (b + (c / d)) и возвращающий результат,где a, b, c, d – входные параметры этого метода;
     public static double expression1(byte a, short b, int c, double d) {
