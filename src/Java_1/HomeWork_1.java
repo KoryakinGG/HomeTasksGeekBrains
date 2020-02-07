@@ -1,3 +1,5 @@
+package Java_1;
+
 public class HomeWork_1 {
     public static void main(String[] args) {
         // создать переменные всех типов
