@@ -17,7 +17,7 @@ public class HomeWork_1 {
         double d = 23423423234.23423423434;
         System.out.println(expression1((byte) 5, (short) 450, 80, 2.0));
         System.out.println(expression2(4, 14));
-        System.out.println("Число " +  positiveOrNegative(-55));
+        positiveOrNegative(50);
         System.out.println(negative(-6));
         hello("Билли Боб Торнтон");
         isLeapYear(2020);
@@ -38,12 +38,16 @@ public class HomeWork_1 {
     /*Написать метод, которому в качестве параметра передается целое число,
     метод должен напечатать в консоль положительное ли число передали, или отрицательное; Замечание: ноль считаем положительным числом.
      */
-    static boolean positiveOrNegative( int x) {
-        return x >= 0;
+    static void positiveOrNegative(int x) {
+        if (x >= 0) {
+            System.out.println("Число положительное");
+        } else {
+            System.out.println("Число отрицательное");
+        }
     }
 
     //Написать метод, которому в качестве параметра передается целое число, метод должен вернуть true, если число отрицательное;
-    private static boolean negative( int x) {
+    private static boolean negative(int x) {
         return x < 0;
     }
 
