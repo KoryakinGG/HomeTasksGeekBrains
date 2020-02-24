@@ -1,7 +1,4 @@
-package Java_1.Lesson_1;
-
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-import org.w3c.dom.ls.LSOutput;
+package Java1.Lesson1;
 
 public class HomeWork_1 {
 
