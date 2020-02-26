@@ -23,10 +23,6 @@ public class Employee {
                 name, position, eMail, phoneNumber, salary, age);
     }
 
-    public void print() {
-        System.out.println(this);
-    }
-
     public static void main(String[] args) {
         Employee employee1 = new Employee("Билл Клинтон", "Президент", "BillClinton@gmail.com", 1212234567, 200_000, 73);
 
@@ -37,9 +33,9 @@ public class Employee {
         arraysOfEmployees[3] = new Employee("Джеймс Гослинг", "Разработчик", "JammyLanister@gmail.com", 18465454, 900_000, 65);
         arraysOfEmployees[4] = new Employee("Выходец Из Убежища 13", "Выживальщик", "WereIsMyGun@gmail.com", 1212666874, 100_000, 41);
 
-        for (int i = 0; i < arraysOfEmployees.length; i++) {
-            if (arraysOfEmployees[i].age > 40) {
-                arraysOfEmployees[i].print();
+        for (Employee arraysOfEmployee : arraysOfEmployees) {
+            if (arraysOfEmployee.age > 40) {
+                System.out.println(arraysOfEmployee.toString());
             }
         }
     }
