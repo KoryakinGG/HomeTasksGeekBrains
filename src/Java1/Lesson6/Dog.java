@@ -1,9 +1,14 @@
 package Java1.Lesson6;
 
 public class Dog extends Animal {
+
 //    public Dog(String name) {
 //        super(name);
 //    }
+
+    public Dog(String name) {
+        super(name);
+    }
 
     @Override
     public void run(int distance) {
