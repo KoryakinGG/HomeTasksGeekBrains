@@ -1,7 +1,5 @@
 package Java1.Lesson6;
 
-import static Java1.Lesson6.Animal.count;
-
 public class Main {
     public static void main(String[] args) {
         Animal cat1 = new Cat("Мурзик");
@@ -25,6 +23,6 @@ public class Main {
         dog2.run(501);
         dog2.swim(9);
 
-        System.out.println("\nВсего создано животных на Земле "+ count);
+        System.out.println("\nВсего создано животных на Земле "+ Animal.count);
     }
 }
