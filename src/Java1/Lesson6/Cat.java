@@ -1,11 +1,10 @@
 package Java1.Lesson6;
-
-import com.sun.javaws.IconUtil;
-
+ Lesson7
 public class Cat extends Animal {
-//    public Cat(String name) {
-//        super(name);
-//    }
+    public Cat(String name) {
+        super(name);
+    }
+
 
     @Override
     public void run(int distance) {
