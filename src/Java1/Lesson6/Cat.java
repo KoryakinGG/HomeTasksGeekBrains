@@ -1,9 +1,10 @@
 package Java1.Lesson6;
-
+ Lesson7
 public class Cat extends Animal {
     public Cat(String name) {
         super(name);
     }
+
 
     @Override
     public void run(int distance) {

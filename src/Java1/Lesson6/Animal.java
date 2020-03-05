@@ -3,11 +3,8 @@ package Java1.Lesson6;
 public abstract class Animal {
     private String name;
     static int count = 0;
-    public Animal (String name){
-        this.name = name;
-        count++;
-    }
-//    Animal () {count++;}
+
+    Animal () {count++;}
 
     public String getName() {
         return name;
