@@ -6,7 +6,6 @@ public abstract class Animal {
 //    public Animal (String name){
 //        this.name = name;
 //        count++;
-//    }
     Animal () {count++;}
 
     public String getName() {
