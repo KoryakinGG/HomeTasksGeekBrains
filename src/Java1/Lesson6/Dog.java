@@ -6,9 +6,11 @@ public class Dog extends Animal {
 //        super(name);
 //    }
 
+
     public Dog(String name) {
         super(name);
     }
+
 
     @Override
     public void run(int distance) {
