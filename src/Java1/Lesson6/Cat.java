@@ -6,14 +6,6 @@ public class Cat extends Animal {
 //        super(name);
 //    }
 
-
-import com.sun.javaws.IconUtil;
-
-public class Cat extends Animal {
-//    public Cat(String name) {
-//        super(name);
-//    }
-
     @Override
     public void run(int distance) {
         if (distance < 200) {

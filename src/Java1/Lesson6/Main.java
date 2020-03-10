@@ -1,5 +1,4 @@
 package Java1.Lesson6;
-Lesson7
 import static Java1.Lesson6.Animal.count;
 
 import static Java1.Lesson6.Animal.count;
