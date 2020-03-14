@@ -5,7 +5,7 @@ import java.util.*;
 public class Main {
 
     static HashSet<String> toFindUniqueWords(String[] array) {
-        return new HashSet<>(Arrays.asList(array)); // тут мне стало интересно, что предложит Идея для оптимизации кода, да так и оставлю пожалуй. =)
+        return new HashSet<>(Arrays.asList(array)); // С‚СѓС‚ РјРЅРµ СЃС‚Р°Р»Рѕ РёРЅС‚РµСЂРµСЃРЅРѕ, С‡С‚Рѕ РїСЂРµРґР»РѕР¶РёС‚ РРґРµСЏ РґР»СЏ РѕРїС‚РёРјРёР·Р°С†РёРё РєРѕРґР°, РґР° С‚Р°Рє Рё РѕСЃС‚Р°РІР»СЋ РїРѕР¶Р°Р»СѓР№. =)
     }
 
     static HashMap<String, Integer> numberOfUniqueWords(String[] array) {
@@ -21,13 +21,13 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        // Задание № 1
-        String poem = "Кто жизнью бит, тот большего добьется. Пуд соли съевший выше ценит мед. Кто слезы лил, тот искренней смеется. Кто умирал, тот знает, что живет!";
+        // Р—Р°РґР°РЅРёРµ в„– 1
+        String poem = "РљС‚Рѕ Р¶РёР·РЅСЊСЋ Р±РёС‚, С‚РѕС‚ Р±РѕР»СЊС€РµРіРѕ РґРѕР±СЊРµС‚СЃСЏ. РџСѓРґ СЃРѕР»Рё СЃСЉРµРІС€РёР№ РІС‹С€Рµ С†РµРЅРёС‚ РјРµРґ. РљС‚Рѕ СЃР»РµР·С‹ Р»РёР», С‚РѕС‚ РёСЃРєСЂРµРЅРЅРµР№ СЃРјРµРµС‚СЃСЏ. РљС‚Рѕ СѓРјРёСЂР°Р», С‚РѕС‚ Р·РЅР°РµС‚, С‡С‚Рѕ Р¶РёРІРµС‚!";
         String[] stringArrays = poem.replaceAll("[,.!]", "").split(" ");
-        System.out.println("Уникальные слова: " + toFindUniqueWords(stringArrays));
-        System.out.println("Количество уникальных слов: " + numberOfUniqueWords(stringArrays));
+        System.out.println("РЈРЅРёРєР°Р»СЊРЅС‹Рµ СЃР»РѕРІР°: " + toFindUniqueWords(stringArrays));
+        System.out.println("РљРѕР»РёС‡РµСЃС‚РІРѕ СѓРЅРёРєР°Р»СЊРЅС‹С… СЃР»РѕРІ: " + numberOfUniqueWords(stringArrays));
 
-        // Задание № 2
+        // Р—Р°РґР°РЅРёРµ в„– 2
         PhoneBook phoneBook = new PhoneBook();
 
         Person person1;
@@ -38,6 +38,8 @@ public class Main {
         phoneBook.addContact(person2 = new Person("Gary", "Gary@gmail.com", "89252744375"));
         phoneBook.addContact(person3 = new Person("Harry", "Harry@gmail.com", "89252744376"));
         phoneBook.addContact(person4 = new Person("Tarry", "Tarry@gmail.com", "89252744377"));
+        person1.addEmail("Mary-Carry@gmail.com");
+        person4.addPhoneNumber("8965325414");
 
         String[] namesToFind = {"Mary", "Harry", "Gary", "Tarry"};
         for (int i = 0; i < namesToFind.length; i++) {
