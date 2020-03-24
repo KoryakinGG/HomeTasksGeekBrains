@@ -13,7 +13,7 @@ import java.util.Vector;
 public class ChatServer implements ServerSocketThreadListener, SocketThreadListener {
 
     ServerSocketThread server;
-    Vector <SocketThread> arrayClients = new Vector<>();
+      Vector <SocketThread> arrayClients = new Vector<>();
 
     public void start(int port) {
         if (server == null || !server.isAlive()) {
@@ -92,16 +92,16 @@ public class ChatServer implements ServerSocketThreadListener, SocketThreadListe
     public void onSocketReady(SocketThread thread, Socket socket) {
 
         putLog("Client is ready to chat");
-        arrayClients.add(thread);
+          arrayClients.add(thread);
     }
 
     @Override
     public void onReceiveString(SocketThread thread, Socket socket, String msg) {
 
        // thread.sendMessage("Echo: " + msg);
-        for (int i = 0; i < arrayClients.size(); i++) {
-            arrayClients.get(i).sendMessage(socket + msg);
-        }
+          for (int i = 0; i < arrayClients.size(); i++) {
+              arrayClients.get(i).sendMessage(socket + msg);
+         }
     }
 
     @Override
