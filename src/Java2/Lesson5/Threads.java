@@ -5,7 +5,7 @@ public class Threads extends Thread {
     public static void main(String[] args) {
         singleStream();
         multiStream();
-    }
+      }
 
     private static synchronized void multiStream() {
         long start = System.currentTimeMillis();
@@ -19,8 +19,8 @@ public class Threads extends Thread {
         System.arraycopy(array, 0, array1, 0, half);
         System.arraycopy(array, 0, array2, 0, half);
 
-        new threadRunningTime("1 stream", array1);
-        new threadRunningTime("2 stream", array2);
+        new threadRunningTime("1 stream", array1,0);
+        new threadRunningTime("2 stream", array2, half);
 
         System.arraycopy(array1, 0, array, 0, half);
         System.arraycopy(array2, 0, array, half, half);
